@@ -26,7 +26,8 @@ public abstract class ElementosQ {
         this.peso = peso;
     }
 
-
+  
+    
     //Método abstracto
         public abstract int grupo();
         public abstract String nombre();

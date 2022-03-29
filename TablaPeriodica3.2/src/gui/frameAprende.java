@@ -4,14 +4,12 @@
  * and open the template in the editor.
  */
 package gui;
-import java.applet.AudioClip;
+
 import ElementoR.Negocio;
 import com.sun.javafx.scene.control.SizeLimitedList;
 import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.*;
-
-
 
 
 /**
@@ -598,7 +596,9 @@ int ventana=0;
         );
         pnl2BeLayout.setVerticalGroup(
             pnl2BeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(txt2Be, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl2BeLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(txt2Be, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pnl2Mg.setBackground(new java.awt.Color(41, 128, 185));
@@ -1936,7 +1936,7 @@ int ventana=0;
                 .addComponent(desNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(desPeso)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         pnlImagen.setBackground(new java.awt.Color(204, 204, 204));
@@ -2077,7 +2077,7 @@ int ventana=0;
                                 .addComponent(pnl7F, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(6, 6, 6)
                                 .addComponent(pnl8Ne, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
         pnlPRINCIPALLayout.setVerticalGroup(
             pnlPRINCIPALLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2085,10 +2085,13 @@ int ventana=0;
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(pnlPRINCIPALLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlPRINCIPALLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
                         .addGroup(pnlPRINCIPALLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnVIIIA, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnIA, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(pnlPRINCIPALLayout.createSequentialGroup()
+                                .addGap(15, 15, 15)
+                                .addComponent(btnIA, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(pnlPRINCIPALLayout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(btnVIIIA, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(pnlPRINCIPALLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlPRINCIPALLayout.createSequentialGroup()
                                 .addGroup(pnlPRINCIPALLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2810,8 +2813,8 @@ int ventana=0;
         subpnl3TlLayout.setHorizontalGroup(
             subpnl3TlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(subpnl3TlLayout.createSequentialGroup()
-                .addComponent(mnemo3Tl)
-                .addGap(0, 33, Short.MAX_VALUE))
+                .addComponent(mnemo3Tl, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         subpnl3TlLayout.setVerticalGroup(
             subpnl3TlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4018,8 +4021,8 @@ int ventana=0;
         subpanelAprendeLayout.setHorizontalGroup(
             subpanelAprendeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(txtVersion1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(txtVersion4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
-            .addComponent(opcionAprender, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(opcionAprender, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
+            .addComponent(txtVersion4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         subpanelAprendeLayout.setVerticalGroup(
             subpanelAprendeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4055,9 +4058,9 @@ int ventana=0;
         subpanelPractica.setLayout(subpanelPracticaLayout);
         subpanelPracticaLayout.setHorizontalGroup(
             subpanelPracticaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(txtVersion3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(txtVersion2, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
             .addComponent(opcionPractica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(txtVersion3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(txtVersion2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         subpanelPracticaLayout.setVerticalGroup(
             subpanelPracticaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4092,11 +4095,11 @@ int ventana=0;
                 .addComponent(subpanelAprende, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(subpanelPractica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(269, 269, 269)
+                .addGap(287, 287, 287)
                 .addComponent(iconQuimica, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtVersion)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(588, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout PANELLayout = new javax.swing.GroupLayout(PANEL);
@@ -4137,9 +4140,6 @@ int ventana=0;
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVIIIAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVIIIAActionPerformed
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/8.wav"));
-        Sound.play();
         // INDICAR QUE EL GRUPO FUE SELECCIONADO
         grupoSeleecionado=8;
         //HABILITAR COLOR AL GRUPO SELECCIONADO
@@ -4208,9 +4208,6 @@ int ventana=0;
     }//GEN-LAST:event_btnVIIIAActionPerformed
 
     private void btnVIIAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVIIAActionPerformed
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/7.wav"));
-        Sound.play();
         // INDICAR QUE EL GRUPO FUE SELECCIONADO
         grupoSeleecionado=7;
         //HABILITAR COLOR AL GRUPO SELECCIONADO
@@ -4277,9 +4274,6 @@ int ventana=0;
     }//GEN-LAST:event_btnVIIAActionPerformed
 
     private void btnVIAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVIAActionPerformed
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/6.wav"));
-        Sound.play();
         // INDICAR QUE EL GRUPO FUE SELECCIONADO
         grupoSeleecionado=6;
         //HABILITAR COLOR AL GRUPO SELECCIONADO
@@ -4346,9 +4340,6 @@ int ventana=0;
     }//GEN-LAST:event_btnVIAActionPerformed
 
     private void btnVAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVAActionPerformed
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/5.wav"));
-        Sound.play();
         // INDICAR QUE EL GRUPO FUE SELECCIONADO
         grupoSeleecionado=5;
         //HABILITAR COLOR AL GRUPO SELECCIONADO
@@ -4415,9 +4406,6 @@ int ventana=0;
     }//GEN-LAST:event_btnVAActionPerformed
 
     private void btnIVAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIVAActionPerformed
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/4.wav"));
-        Sound.play();
         // INDICAR QUE EL GRUPO FUE SELECCIONADO
         grupoSeleecionado=4;
         //HABILITAR COLOR AL GRUPO SELECCIONADO
@@ -4484,9 +4472,6 @@ int ventana=0;
     }//GEN-LAST:event_btnIVAActionPerformed
 
     private void btnIIIAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIIIAActionPerformed
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/3.wav"));
-        Sound.play();
         // INDICAR QUE EL GRUPO FUE SELECCIONADO
         grupoSeleecionado=3;
         //HABILITAR COLOR AL GRUPO SELECCIONADO
@@ -4553,9 +4538,6 @@ int ventana=0;
     }//GEN-LAST:event_btnIIIAActionPerformed
 
     private void btnIIAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIIAActionPerformed
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/2.wav"));
-        Sound.play();
         // INDICAR QUE EL GRUPO FUE SELECCIONADO
         grupoSeleecionado=2;
         pnl2Be.setBackground(new Color(243,156,18));
@@ -4622,10 +4604,7 @@ int ventana=0;
     }//GEN-LAST:event_btnIIAActionPerformed
 
     private void btnIAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIAActionPerformed
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/1.wav"));
-        Sound.play();
-    // INDICAR QUE EL GRUPO FUE SELECCIONADO
+        // INDICAR QUE EL GRUPO FUE SELECCIONADO
         grupoSeleecionado=1;
         //HABILITAR COLOR AL GRUPO SELECCIONADO
         pnl1H.setBackground(new Color(243,156,18));
@@ -4706,7 +4685,7 @@ int ventana=0;
     }//GEN-LAST:event_pnlTransicionMouseClicked
 
     private void pnl8RnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl8RnMouseExited
-        if(grupoSeleecionado==8){ // Si el grupo 8 está seleccionado, volver a colo amarillo al sacar mouse
+        if(grupoSeleecionado==8){ // Si el grupo 4 está seleccionado, volver a colo amarillo al sacar mouse
             pnl8Rn.setBackground(new Color(243,156,18));
             subpnl8Rn.setBackground(new Color(243,156,18));
         }else{
@@ -4721,9 +4700,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl8RnMouseEntered
 
     private void pnl8RnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl8RnMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/rn.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[44]);
         elemento = obj.dElemento(86);
         desZ.setText(""+elemento.getZ());
@@ -4748,9 +4724,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl8XeMouseEntered
 
     private void pnl8XeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl8XeMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/xe.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[43]);
         elemento = obj.dElemento(54);
         desZ.setText(""+elemento.getZ());
@@ -4775,9 +4748,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl8KrMouseEntered
 
     private void pnl8KrMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl8KrMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/kr.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[42]);
         elemento = obj.dElemento(36);
         desZ.setText(""+elemento.getZ());
@@ -4802,9 +4772,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl8ArMouseEntered
 
     private void pnl8ArMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl8ArMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/ar.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[41]);
         elemento = obj.dElemento(18);
         desZ.setText(""+elemento.getZ());
@@ -4830,9 +4797,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl8NeMouseEntered
 
     private void pnl8NeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl8NeMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/ne.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[40]);
         elemento = obj.dElemento(10);
         desZ.setText(""+elemento.getZ());
@@ -4857,9 +4821,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl8HeMouseEntered
 
     private void pnl8HeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl8HeMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/he.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[39]);
         elemento = obj.dElemento(2);
         desZ.setText(""+elemento.getZ());
@@ -4884,9 +4845,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl7AtMouseEntered
 
     private void pnl7AtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl7AtMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/at.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[38]);
         elemento = obj.dElemento(85);
         desZ.setText(""+elemento.getZ());
@@ -4911,9 +4869,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl7IMouseEntered
 
     private void pnl7IMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl7IMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/i.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[37]);
         elemento = obj.dElemento(53);
         desZ.setText(""+elemento.getZ());
@@ -4938,9 +4893,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl7BrMouseEntered
 
     private void pnl7BrMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl7BrMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/br.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[36]);
         elemento = obj.dElemento(35);
         desZ.setText(""+elemento.getZ());
@@ -4965,9 +4917,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl7ClMouseEntered
 
     private void pnl7ClMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl7ClMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/cl.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[35]);
         elemento = obj.dElemento(17);
         desZ.setText(""+elemento.getZ());
@@ -4992,9 +4941,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl7FMouseEntered
 
     private void pnl7FMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl7FMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/f.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[34]);
         elemento = obj.dElemento(9);
         desZ.setText(""+elemento.getZ());
@@ -5019,9 +4965,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl6PoMouseEntered
 
     private void pnl6PoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl6PoMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/po.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[33]);
         elemento = obj.dElemento(84);
         desZ.setText(""+elemento.getZ());
@@ -5046,9 +4989,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl6TeMouseEntered
 
     private void pnl6TeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl6TeMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/te.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[32]);
         elemento = obj.dElemento(52);
         desZ.setText(""+elemento.getZ());
@@ -5073,9 +5013,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl6SeMouseEntered
 
     private void pnl6SeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl6SeMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/se.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[31]);
         elemento = obj.dElemento(34);
         desZ.setText(""+elemento.getZ());
@@ -5100,9 +5037,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl6SMouseEntered
 
     private void pnl6SMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl6SMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/s.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[30]);
         elemento = obj.dElemento(16);
         desZ.setText(""+elemento.getZ());
@@ -5127,9 +5061,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl6OMouseEntered
 
     private void pnl6OMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl6OMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/o.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[29]);
         elemento = obj.dElemento(8);
         desZ.setText(""+elemento.getZ());
@@ -5154,9 +5085,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl5BiMouseEntered
 
     private void pnl5BiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl5BiMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/bi.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[28]);
         elemento = obj.dElemento(83);
         desZ.setText(""+elemento.getZ());
@@ -5182,9 +5110,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl5SbMouseEntered
 
     private void pnl5SbMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl5SbMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/sb.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[27]);
         elemento = obj.dElemento(51);
         desZ.setText(""+elemento.getZ());
@@ -5209,9 +5134,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl5AsMouseEntered
 
     private void pnl5AsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl5AsMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/as.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[26]);
         elemento = obj.dElemento(33);
         desZ.setText(""+elemento.getZ());
@@ -5236,9 +5158,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl5PMouseEntered
 
     private void pnl5PMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl5PMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/p.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[25]);
         elemento = obj.dElemento(15);
         desZ.setText(""+elemento.getZ());
@@ -5264,9 +5183,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl5NMouseEntered
 
     private void pnl5NMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl5NMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/n.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[24]);
         elemento = obj.dElemento(7);
         desZ.setText(""+elemento.getZ());
@@ -5286,15 +5202,11 @@ int ventana=0;
     }//GEN-LAST:event_pnl4PbMouseExited
 
     private void pnl4PbMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl4PbMouseEntered
-        
         pnl4Pb.setBackground(new Color(0, 188, 212));
         subpnl4Pb.setBackground(new Color(0, 188, 212));
     }//GEN-LAST:event_pnl4PbMouseEntered
 
     private void pnl4PbMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl4PbMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/pb.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[23]);
         elemento = obj.dElemento(82);
         desZ.setText(""+elemento.getZ());
@@ -5319,9 +5231,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl4SnMouseEntered
 
     private void pnl4SnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl4SnMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/sn.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[22]);
         elemento = obj.dElemento(50);
         desZ.setText(""+elemento.getZ());
@@ -5346,9 +5255,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl4GeMouseEntered
 
     private void pnl4GeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl4GeMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/ge.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[21]);
         elemento = obj.dElemento(32);
         desZ.setText(""+elemento.getZ());
@@ -5373,9 +5279,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl4SiMouseEntered
 
     private void pnl4SiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl4SiMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/si.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[20]);
         elemento = obj.dElemento(14);
         desZ.setText(""+elemento.getZ());
@@ -5400,9 +5303,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl4CMouseEntered
 
     private void pnl4CMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl4CMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/c.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[19]);
         elemento = obj.dElemento(6);
         desZ.setText(""+elemento.getZ());
@@ -5428,9 +5328,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl3TlMouseEntered
 
     private void pnl3TlMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl3TlMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/tl.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[18]);
         elemento = obj.dElemento(81);
         desZ.setText(""+elemento.getZ());
@@ -5455,9 +5352,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl3InMouseEntered
 
     private void pnl3InMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl3InMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/in.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[17]);
         elemento = obj.dElemento(49);
         desZ.setText(""+elemento.getZ());
@@ -5482,9 +5376,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl3GaMouseEntered
 
     private void pnl3GaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl3GaMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/ga.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[16]);
         elemento = obj.dElemento(31);
         desZ.setText(""+elemento.getZ());
@@ -5509,9 +5400,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl3AlMouseEntered
 
     private void pnl3AlMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl3AlMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/al.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[15]);
         elemento = obj.dElemento(13);
         desZ.setText(""+elemento.getZ());
@@ -5536,9 +5424,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl3BMouseEntered
 
     private void pnl3BMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl3BMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/b.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[14]);
         elemento = obj.dElemento(5);
         desZ.setText(""+elemento.getZ());
@@ -5563,9 +5448,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl2RaMouseEntered
 
     private void pnl2RaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl2RaMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/ra.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[13]);
         elemento = obj.dElemento(88);
         desZ.setText(""+elemento.getZ());
@@ -5590,9 +5472,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl2BaMouseEntered
 
     private void pnl2BaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl2BaMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/Ba.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[12]);
         elemento = obj.dElemento(56);
         desZ.setText(""+elemento.getZ());
@@ -5617,9 +5496,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl2SrMouseEntered
 
     private void pnl2SrMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl2SrMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/sr.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[11]);
         elemento = obj.dElemento(38);
         desZ.setText(""+elemento.getZ());
@@ -5644,9 +5520,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl2CaMouseEntered
 
     private void pnl2CaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl2CaMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/ca.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[10]);
         elemento = obj.dElemento(20);
         desZ.setText(""+elemento.getZ());
@@ -5671,9 +5544,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl2MgMouseEntered
 
     private void pnl2MgMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl2MgMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/fr.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[9]);
         elemento = obj.dElemento(12);
         desZ.setText(""+elemento.getZ());
@@ -5698,9 +5568,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl2BeMouseEntered
 
     private void pnl2BeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl2BeMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/Be.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[8]);
         elemento = obj.dElemento(4);
         desZ.setText(""+elemento.getZ());
@@ -5725,9 +5592,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl1FrMouseEntered
 
     private void pnl1FrMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl1FrMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/fr.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[7]);
         elemento = obj.dElemento(87);
         desZ.setText(""+elemento.getZ());
@@ -5753,9 +5617,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl1CsMouseEntered
 
     private void pnl1CsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl1CsMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/cs.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[6]);
         elemento = obj.dElemento(55);
         desZ.setText(""+elemento.getZ());
@@ -5780,9 +5641,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl1RbMouseEntered
 
     private void pnl1RbMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl1RbMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/rb.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[5]);
         elemento = obj.dElemento(37);
         desZ.setText(""+elemento.getZ());
@@ -5807,9 +5665,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl1KMouseEntered
 
     private void pnl1KMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl1KMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/k.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[4]);
         elemento = obj.dElemento(19);
         desZ.setText(""+elemento.getZ());
@@ -5834,9 +5689,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl1NaMouseEntered
 
     private void pnl1NaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl1NaMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/na.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[3]);
         elemento = obj.dElemento(11);
         desZ.setText(""+elemento.getZ());
@@ -5863,9 +5715,6 @@ int ventana=0;
     }//GEN-LAST:event_pnlLiMouseEntered
 
     private void pnlLiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlLiMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/li.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[2]);
         elemento = obj.dElemento(3);
         desZ.setText(""+elemento.getZ());
@@ -5890,9 +5739,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl1HMouseEntered
 
     private void pnl1HMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl1HMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/h.wav"));
-        Sound.play();
         imageApp.setIcon(Imagen[1]);
         elemento = obj.dElemento(1);
         desZ.setText(""+elemento.getZ());
@@ -5902,9 +5748,6 @@ int ventana=0;
     }//GEN-LAST:event_pnl1HMouseClicked
 
     private void subpanelAprendeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subpanelAprendeMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/A.wav"));
-        Sound.play();
         subpanelAprende.setBackground(new Color(44,62,80));
         subpanelPractica.setBackground(new Color(38,50,56));
         frameAprende aprende = new frameAprende();
@@ -5913,9 +5756,6 @@ int ventana=0;
     }//GEN-LAST:event_subpanelAprendeMouseClicked
 
     private void subpanelPracticaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subpanelPracticaMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/modo2.wav"));
-        Sound.play();
         subpanelPractica.setBackground(new Color(44,62,80));
         subpanelAprende.setBackground(new Color(38,50,56));
         
@@ -5928,7 +5768,6 @@ int ventana=0;
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        //Audio repro = new Audio();
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

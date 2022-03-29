@@ -4,10 +4,9 @@
  * and open the template in the editor.
  */
 package gui;
-import java.applet.AudioClip;
+
 import ElementoR.Negocio;
 import com.sun.javafx.scene.control.SizeLimitedList;
-import java.applet.AudioClip;
 import java.awt.Color;
 import java.util.Random;
 import javax.swing.ImageIcon;
@@ -35,7 +34,6 @@ int contador=1;
         
         initComponents();
         setSize(1005, 650); // Establecer tamaño inicial 630
-        
         // Seleccionar Menú Practica, desactivar menu Aprende
         subpanelPractica.setBackground(new Color(44,62,80));
         subpanelAprende.setBackground(new Color(38,50,56));
@@ -53,10 +51,6 @@ int contador=1;
         mnemoVIIIA.setVisible(false);
         // Generar número aleatorio entre 1 y 8
         grupoSeleecionado = (int) (Math.random() * 8) + 1;
-        switch(grupoSeleecionado){
-            case 1:
-                
-        }
         /* PRUEBA
         grupoSeleecionado=8;*/
         System.out.println(grupoSeleecionado);
@@ -2515,7 +2509,7 @@ int contador=1;
         pnlImagenLayout.setVerticalGroup(
             pnlImagenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlImagenLayout.createSequentialGroup()
-                .addComponent(imageApp, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)
+                .addComponent(imageApp, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -2643,7 +2637,7 @@ int contador=1;
                                 .addComponent(pnl7F, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(6, 6, 6)
                                 .addComponent(pnl8Ne, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
         pnlPRINCIPALLayout.setVerticalGroup(
             pnlPRINCIPALLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4209,8 +4203,8 @@ int contador=1;
         subpanelAprendeLayout.setHorizontalGroup(
             subpanelAprendeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(txtVersion1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(txtVersion3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(opcionAprender, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(txtVersion3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         subpanelAprendeLayout.setVerticalGroup(
             subpanelAprendeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4270,10 +4264,10 @@ int contador=1;
         pnlMenuLayout.setHorizontalGroup(
             pnlMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(iconQuimica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(subpanelAprende, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(subpanelPractica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(txtVersion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(subpanelAprende, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         pnlMenuLayout.setVerticalGroup(
             pnlMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4299,7 +4293,9 @@ int contador=1;
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(PANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(panelNemo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnlPRINCIPAL, javax.swing.GroupLayout.PREFERRED_SIZE, 938, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PANELLayout.createSequentialGroup()
+                        .addGap(0, 0, 0)
+                        .addComponent(pnlPRINCIPAL, javax.swing.GroupLayout.PREFERRED_SIZE, 938, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PANELLayout.setVerticalGroup(
@@ -7542,9 +7538,6 @@ int contador=1;
     }//GEN-LAST:event_subpnl7AtMouseClicked
 
     private void subpanelPracticaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subpanelPracticaMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/modo2.wav"));
-        Sound.play();
         subpanelPractica.setBackground(new Color(44,62,80));
         subpanelAprende.setBackground(new Color(38,50,56));
 
@@ -7554,9 +7547,6 @@ int contador=1;
     }//GEN-LAST:event_subpanelPracticaMouseClicked
 
     private void subpanelAprendeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_subpanelAprendeMouseClicked
-        AudioClip Sound;
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/ElementoR/A.wav"));
-        Sound.play();
         subpanelAprende.setBackground(new Color(44,62,80));
         subpanelPractica.setBackground(new Color(38,50,56));
         frameAprende aprende = new frameAprende();

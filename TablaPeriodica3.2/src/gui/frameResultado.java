@@ -68,6 +68,7 @@ public class frameResultado extends javax.swing.JFrame {
         });
 
         msjError2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        msjError2.setForeground(new java.awt.Color(0, 0, 0));
         msjError2.setText("Volver a prácticar");
         msjError2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
