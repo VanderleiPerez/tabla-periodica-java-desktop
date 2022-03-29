@@ -1,5 +1,6 @@
 # Tabla periodica desktop
 Aplicación de escritorio para aprender la tabla periódica mediante mnemotecnias | Java 8 GUI.
+Proyecto realizado en el curso de Integrador I.
 
 ### Vista Modo Aprendizaje
 <img src="https://i.postimg.cc/nV0WYF1g/modo-aprendizaje.jpg" width="700"/>
