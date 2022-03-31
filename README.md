@@ -1,6 +1,6 @@
 # Tabla periodica desktop
 <ul>
-  <li>Aplicación de escritorio para aprender la tabla periódica mediante mnemotecnias | Java 8 GUI.</li>
+  <li>Aplicación de escritorio para aprender los elementos representativos de la tabla periódica mediante mnemotecnias | Java 8 GUI.</li>
 </ul>
 
 ### Vista Modo Aprendizaje
