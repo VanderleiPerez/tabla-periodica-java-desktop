@@ -3,8 +3,8 @@
   <li>Aplicación de escritorio para aprender la tabla periódica mediante mnemotecnias | Java 8 GUI.</li>
 </ul>
 
-### Vista Modo Aprendizaje
+### VISTA MODO APRENDIZAJE
 <img src="https://i.postimg.cc/nV0WYF1g/modo-aprendizaje.jpg" width="700"/>
                                                                      
-### Vista Modo Práctica
+### VISTA MODO PRÁCTICA
 <img src="https://i.postimg.cc/X7gwmLJz/modo-practica.jpg" width="700"/>
