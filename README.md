@@ -15,7 +15,7 @@
                                                                      
 ### Pantalla modo práctica
 <ul>
-  <li>Al iniciar esta pantalla se  oculta la columna de un grupo de la tabla periódica seleccionado al azar</li>
+  <li>Al iniciar esta pantalla se  oculta un grupo(columna) de la tabla periódica seleccionado al azar.</li>
 </ul>
 <img src="https://i.postimg.cc/X7gwmLJz/modo-practica.jpg" width="700"/>
 <ul>
